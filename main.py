@@ -1,3 +1,5 @@
+# Kaggle Link: https://www.kaggle.com/code/meetnagadia/sarcasm-detection-nlp-project
+
 # Importing the necessary library
 
 import re
@@ -31,5 +33,14 @@ print(data.isnull().sum())
 # Checking for duplicate values
 
 print(data.duplicated().sum())
+
+# Removing the duplicate values
+
+data.drop_duplicates(inplace=True)
+
+# Checking if duplicate values are removed
+
+data.duplicated().sum()
+
 
 # Too be continued ...
